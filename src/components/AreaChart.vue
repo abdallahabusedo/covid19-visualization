@@ -1,5 +1,5 @@
 <template>
-  <h3>all numbers in the first day</h3>
+  <h3>Area Chart</h3>
   <div width="100px" height="50px">
 
       <canvas  aria-label="Hello ARIA World" role="img" id="myChart"></canvas>

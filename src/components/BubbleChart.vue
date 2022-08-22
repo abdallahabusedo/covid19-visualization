@@ -1,5 +1,5 @@
 <template>
-  <h3>all numbers in the first day</h3>
+  <h3>Bubble Chart</h3>
   <div width="50px" height="50px" >
       <canvas  aria-label="Hello ARIA World" role="img" id="myChart4"></canvas>
   </div>

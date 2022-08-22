@@ -1,4 +1,5 @@
 <template>
+<h3>Radar Chart</h3>
       <canvas  aria-label="Hello ARIA World" role="img" id="myChart3"></canvas>
 </template>
 
