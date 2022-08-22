@@ -10,6 +10,21 @@
       :DeathsToltals="DeathsToltals"
       :RecoverdToltals="RecoverdToltals"
       />
+      <PolarAreaChart
+      :PositiveCasestotals="PositiveCasestotals"
+      :DeathsToltals="DeathsToltals"
+      :RecoverdToltals="RecoverdToltals" 
+      />
+      <RadarChart 
+      :PositiveCasestotals="PositiveCasestotals"
+      :DeathsToltals="DeathsToltals"
+      :RecoverdToltals="RecoverdToltals" 
+      />
+      <BubbleChart 
+      :PositiveCasestotals="PositiveCasestotals"
+      :DeathsToltals="DeathsToltals"
+      :RecoverdToltals="RecoverdToltals" 
+      />
     </div>
   </div>
   
@@ -23,13 +38,19 @@ import moment from 'moment'
 import BarChart from "./components/BarChart.vue"
 import LinesChart from "./components/LinesChart.vue"
 import AreaChart from "./components/AreaChart.vue"
+import PolarAreaChart from "./components/PolarAreaChart.vue"
+import RadarChart from "./components/RadarChart.vue"
+import BubbleChart from "./components/BubbleChart.vue"
 
 export default {
   name: 'App',
   components: {
     BarChart,
     LinesChart,
-    AreaChart
+    AreaChart,
+    PolarAreaChart,
+    RadarChart,
+    BubbleChart
 },
   data(){
     return{

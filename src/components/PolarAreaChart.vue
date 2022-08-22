@@ -1,8 +1,7 @@
 <template>
   <h3>all numbers in the first day</h3>
-  <div width="100px" height="50px">
-
-      <canvas  aria-label="Hello ARIA World" role="img" id="myChart"></canvas>
+  <div width="50px" height="50px">
+      <canvas  aria-label="Hello ARIA World" role="img" id="myChart2"></canvas>
   </div>
 </template>
 
@@ -12,7 +11,7 @@ import Chart from "chart.js/auto"
 export default {
     props: ['DeathsToltals','PositiveCasestotals',"RecoverdToltals"],
     mounted(){
-        const ctx = document.getElementById("myChart")
+        const ctx = document.getElementById("myChart2")
         const data = {
             labels: [
                 'PositiveCasestotals',
@@ -31,7 +30,7 @@ export default {
             }]
             };
         const myChart = new Chart(ctx, {  
-            type: 'doughnut',
+            type: 'polarArea',
             data: data,
             options: {
                 responsive: true,
